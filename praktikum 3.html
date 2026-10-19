@@ -5,15 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
+  <!-- Tambahkan CSS ini untuk mengatur susunan gambar -->
+    <style>
+        .galeri {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom sejajar */
+            gap: 10px; /* Memberi jarak antar gambar */
+        }
+        
+        .galeri img {
+            width: 100%; /* Membuat gambar menyesuaikan lebar kolom */
+            height: auto;
+            border-radius: 5px; /* (Opsional) agar sudut gambar sedikit melengkung */
+        }
+    </style>
 </head>
 <body>
-  <h2>Togas Menambahkan Gambar</h2>
-  <p>Hasil</p>
-  <!--Gambar-->
-  <img src="wowo.jpg"width="600"
-  
-  <p><a href="index.html">kembali ke menu utama</a>
-  </p>
-</body>
+    <div class="galeri">
+    <!-- Kolom 1, Baris 1: Foto Orang Pertama -->
+    <img src="wowo.jpg" alt="Wowo" width="600">
+    
+    <!-- Kolom 2, Baris 1: Foto Poster Makanan -->
+    <img src="img.jpg" alt="img" width="600">
+    
+    <!-- Kolom 1, Baris 2: Foto Poster SMKN 1 -->
+    <img src="50RB.jpeg" alt="50RB" width="600">
+    
+    <!-- Kolom 2, Baris 2: Link Kunjungi (Pindah ke Sini) -->
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <a href="https://smkn1leuwimunding.sch.id/wp-content/uploads/2026/06/Salinan-dari-Salinan-dari-Salinan-dari-Flyer-ahendri-Konten-Instagram-45.jpg" target="_blank">
+            Kunjungi Foto SMKN 1 Leuwimunding
+        </a>
+    </div>
+</div>
 
-</html>
+<p><a href="index.html">kembali ke menu utama</a></p>
+
+</body>
+  
+</body>
